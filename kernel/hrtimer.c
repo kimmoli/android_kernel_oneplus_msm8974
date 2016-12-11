@@ -753,6 +753,7 @@ void hrtimers_resume(void)
 		  KERN_INFO "hrtimers_resume() called with IRQs enabled!");
 
 	retrigger_next_event(NULL);
+printk(KERN_WARNING "kimmo was here");
 	timerfd_clock_was_set();
 }
 
